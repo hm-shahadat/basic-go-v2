@@ -36,7 +36,7 @@ func main() {
 	// var i,j = 10,20
 	// fmt.Print(i,j)
 
-	// var i,j = "hello","wrold"
+	// var i,j = "hello","world"
 	// fmt.Println(i,j)
 
 	//----go output print function -------
