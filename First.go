@@ -1,8 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+// ---------------------
+// go home to go output
+//----------------------
 
 //-----go constrain variable------
 /*const PI = 40
@@ -17,6 +17,7 @@ const (
 
 var i string = "hello world"
 var j int = 20
+var k float64 = 3.1444
 
 func main() {
 
@@ -44,11 +45,10 @@ func main() {
 
 	// fmt.Printf("the vaule is: %v%% and the type is: %T\n", j,j)
 	// fmt.Printf("the vaule is: %#v\nand the type is: %T\n", j,j)
-	
+
 	// var k = true
 	// fmt.Printf("%t", k)
 
-	
-
+	// fmt.Printf("%.3f", k)
 
 }
