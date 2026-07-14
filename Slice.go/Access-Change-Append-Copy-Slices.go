@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	Access Elements of a Slice
+	//Access Elements of a Slice
 	s1 := []int{10, 20, 30}
 	fmt.Println("Access Elements of a Slice", s1[2])
 
@@ -56,7 +56,7 @@ func main() {
 	sl2 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	fmt.Printf("slice s4: %v\n", sl2)
 	fmt.Printf("length s4: %d\n", len(sl2))
-	fmt.Printf("Capacity s4: %d\n", cap(sl2))
+	fmt.Prin~tf("Capacity s4: %d\n", cap(sl2))
 
 	sl3 := sl2[:len(sl2)-4]      //6
 	sl4 := make([]int, len(sl3)) //6
