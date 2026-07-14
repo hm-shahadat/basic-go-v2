@@ -32,18 +32,17 @@ func main() {
 	var year int
 
 	fmt.Println("enter a name:")
-	fmt.Scanf(&name)
+	fmt.Scanf("%s", &name)
 
 	fmt.Println("enter your age")
-	fmt.Scanf(&age)
+	fmt.Scanf("%d", &age)
 
 	fmt.Println("\"enter your uni. name\"")
-	fmt.Scanf(&uni)
+	fmt.Scanf("%s", &uni)
 
 	fmt.Println("enter your \\passing\\ year")
-	fmt.Scanf(&year)
+	fmt.Scanf("%d", &year)
 
 	fmt.Printf("%v is a student and age %v\n", name, age)
 	fmt.Printf("you are graduate from %v and your passing year %v\n", uni, year)
-
 }
