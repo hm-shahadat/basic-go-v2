@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// Access Elements of a Slice
+	Access Elements of a Slice
 	s1 := []int{10, 20, 30}
 	fmt.Println("Access Elements of a Slice", s1[2])
 
@@ -53,17 +53,16 @@ func main() {
 	fmt.Printf("Capacity s4: %d\n", cap(sl1))
 
 	//  The copy() function
-	sl2 := []int{1, 2, 3, 4, 5}
+	sl2 := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	fmt.Printf("slice s4: %v\n", sl2)
 	fmt.Printf("length s4: %d\n", len(sl2))
 	fmt.Printf("Capacity s4: %d\n", cap(sl2))
 
-	sk1 := sl2[:len(sl2)-2]
-	sk2 := make([]int, len(sk2))
-	copy(sk1, sk2)
+	sl3 := sl2[:len(sl2)-4]      //6
+	sl4 := make([]int, len(sl3)) //6
+	copy(sl4, sl3)
 
-	fmt.Printf("numbersCopy = %v\n", sk2)
-	fmt.Printf("length = %d\n", len(sk2))
-	fmt.Printf("capacity = %d\n", cap(sk2))
-
+	fmt.Printf("value: %v\n", sl4)
+	fmt.Printf("length: %d\n", len(sl4))
+	fmt.Printf("capacity: %d\n", cap(sl4))
 }
