@@ -19,7 +19,6 @@ func mul(x, y float32) float32 {
 func div(x, y float32) float32 {
 	return x / y
 }
-
 func main() {
 
 	var n1, n2, result float32
@@ -53,7 +52,6 @@ func main() {
 			fmt.Println("Invalid")
 			continue
 		}
-
 		fmt.Printf("Result:%v\n", result)
 	}
 
