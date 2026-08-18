@@ -33,6 +33,6 @@ func main() {
 	fmt.Println("Sadu Profile: ")
 	ds(Sadu)
 	fmt.Println("Baba Profile: ")
-	ds(baba)
+	ds(baba) 
 
 }
