@@ -28,4 +28,5 @@ func main() {
 		fmt.Scan(&arr[i])
 	}
 	fmt.Println(arr)
+	fmt.Println(len(arr))
 }
