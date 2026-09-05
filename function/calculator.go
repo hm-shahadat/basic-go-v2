@@ -27,7 +27,7 @@ func main() {
 
 	for i == true {
 
-		fmt.Printf("please an integer number:")
+		fmt.Printf("please enter integer number:")
 		fmt.Scan(&n1)
 
 		fmt.Printf("please enter another integer number:")

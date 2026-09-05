@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	var arr [3]string
+	var arr []string
 
 	// Print Array using loop
 	// for i := 0; i < 5; i++ {
@@ -22,11 +22,14 @@ func main() {
 
 	// fmt.Println(arr[choice])
 
-	for i := 0; i < 3; i++ {
+	for i := 0; i < arr; i++ {
 
-		fmt.Print("please enter your full name in 3 step:")
+		fmt.Print("please enter student number:")
 		fmt.Scan(&arr[i])
 	}
+
 	fmt.Println(arr)
-	fmt.Println(len(arr))
+	fmt.Println(arr2)
+	
+	
 }
