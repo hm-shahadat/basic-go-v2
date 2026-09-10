@@ -37,7 +37,6 @@ func main() {
 	fmt.Printf("length s4: %d\n", len(sl1))
 	fmt.Printf("Capacity s4: %d\n", cap(sl1))
 
-	
 	sl1 = ar1[1:3]
 	fmt.Printf("slice s4: %v\n", sl1)
 	fmt.Printf("length s4: %d\n", len(sl1))
