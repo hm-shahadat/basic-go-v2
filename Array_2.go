@@ -22,14 +22,12 @@ func main() {
 
 	// fmt.Println(arr[choice])
 
-	for i := 0; i < arr; i++ {
+	for i := 0; i < len(arr); i++ {
 
 		fmt.Print("please enter student number:")
 		fmt.Scan(&arr[i])
 	}
 
 	fmt.Println(arr)
-	fmt.Println(arr2)
-	
-	
+
 }
