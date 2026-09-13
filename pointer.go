@@ -22,3 +22,26 @@ func main() {
 	p(&x)
 	fmt.Println(x)
 }
+
+// ---------------------------
+
+// short example
+
+// package main
+
+// import (
+// 	"fmt"
+// )
+
+// func n(x *int) {
+// 	*x = 35
+// 	fmt.Println("it's not main function", *x)
+// }
+
+// func main() {
+// 	x := 1
+
+// 	n(&x)
+
+// 	fmt.Println("it's main function", x)
+// }
