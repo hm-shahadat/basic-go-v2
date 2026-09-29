@@ -2,10 +2,15 @@ package main
 
 import "fmt"
 
+type customer struct {
+	name string
+	id2  float32
+}
 type order struct {
 	id       string
 	money    int
 	position string
+	customer
 }
 
 func newOrder(id string, money int, position string) *order {
@@ -35,6 +40,11 @@ func main() {
 		id:       "1",
 		money:    56500,
 		position: "Junior Eng.",
+		customer: customer{
+
+			name: "Shahadat",
+			id2:  1.1,
+		},
 	}
 
 	myOrder2 := order{
@@ -62,5 +72,6 @@ func main() {
 	}{"Ass.Teacher", 38000}
 
 	fmt.Printf("Employ position: %v and Salary:%v \n ", teacher.position, teacher.salary)
+	fmt.Printf("ID: %v and Name: %v\n ", myOrder.id2, myOrder.name)
 
 }

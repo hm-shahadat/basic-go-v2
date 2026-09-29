@@ -1,5 +1,4 @@
 {
-
     // This is for customised you VS front size, colour, style and other settings. You can change the font size, line height, letter spacing, font weight, and font family to your preference. Additionally, you can customize the token colors for different scopes in your code.
 "editor.fontSize": 20,
 "editor.lineHeight": 32,
