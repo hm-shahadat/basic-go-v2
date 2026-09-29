@@ -73,5 +73,5 @@ func main() {
 
 	fmt.Printf("Employ position: %v and Salary:%v \n ", teacher.position, teacher.salary)
 	fmt.Printf("ID: %v and Name: %v\n ", myOrder.id2, myOrder.name)
-
+	//ok
 }
