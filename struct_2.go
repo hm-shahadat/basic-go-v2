@@ -62,4 +62,5 @@ func main() {
 	}{"Ass.Teacher", 38000}
 
 	fmt.Printf("Employ position: %v and Salary:%v \n ", teacher.position, teacher.salary)
+
 }

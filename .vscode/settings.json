@@ -1,0 +1,37 @@
+{
+"editor.fontSize": 20,
+"editor.lineHeight": 32,
+"editor.letterSpacing": 0.8,
+"editor.fontWeight": "normal",
+"editor.fontFamily": "'Times New Roman', serif",
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+        {
+            "name": "Eye-friendly soft green for plain text and variables",
+            "scope": [
+                "variable",
+                "variable.other",
+                "variable.parameter",
+                "source.go"
+            ],
+            "settings": {
+                "foreground": "#93C47D"
+            }
+        },
+        {
+            "name": "Eye-friendly muted slate blue for packages and libraries",
+            "scope": [
+                "entity.name.import",
+                "storage.modifier.package",
+                "support.function",
+                "entity.name.function"
+            ],
+            "settings": {
+                "foreground": "#8EBAE5"
+            }
+        }
+    ]
+}
+
+
+}
