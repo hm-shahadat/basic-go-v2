@@ -2,39 +2,39 @@ package main
 
 import "fmt"
 
-type payment struct{}
+type payment struct {
+	gateway razorpay
+}
 
 func (p payment) makePayment(amount float32) {
-	rezorpayPaymentGW := razorpay{}
-	rezorpayPaymentGW.pay(amount)
+	// rezorpayPaymentGW := razorpay{}
+	// rezorpayPaymentGW.pay(amount)
+
+	// newStrip := stripe{}
+	// newStrip.pay(amount)
+
+	p.gateway.pay(amount)
 }
 
-type razorpay struct{}
+type razorpay struct {
+}
 
 func (r razorpay) pay(amount float32) {
-	fmt.Println("amount", amount)
+	fmt.Println("amount razorpay: ", amount)
 }
 
-//--------------------------------------------------------------------
-type try struct{}
+type stripe struct{}
 
-func (t try) tryMe(amount float32) {
-	fortry := try2{}
-	fortry := tryMe(amount)
-}
+func (s stripe) pay(amount float32) {
 
-type try2 struct{}
-
-func (t try2) tryMe2(amount float32) {
-	fmt.Print("amount2: ", amount)
+	fmt.Print("amount strip: ", amount)
 }
 
 func main() {
-
-	newPayment := payment{}
+	newRazorpay := razorpay{}
+	newPayment := payment{
+		gateway: newRazorpay,
+	}
 	newPayment.makePayment(100)
-	//-----------------------------------------------------------
 
-	newTry := try{}
-	newTry.tryMe(100)
 }
